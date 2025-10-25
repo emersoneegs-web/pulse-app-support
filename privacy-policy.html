@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Pulse</title>
+    <style>
+        :root {
+            --primary-red: #ef4444;
+            --dark-bg: #0f0f0f;
+            --dark-surface: #1a1a1a;
+            --dark-text: #ffffff;
+            --light-bg: #ffffff;
+            --light-surface: #f8f9fa;
+            --light-text: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background: var(--light-bg);
+            color: var(--light-text);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: var(--dark-bg);
+                color: var(--dark-text);
+            }
+            
+            .container {
+                background: var(--dark-surface);
+            }
+            
+            .back-link {
+                color: var(--primary-red);
+            }
+            
+            .back-link:hover {
+                color: #dc2626;
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: var(--light-surface);
+            min-height: 100vh;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-red);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #dc2626;
+        }
+
+        .back-link::before {
+            content: '←';
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: var(--primary-red);
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        .date {
+            opacity: 0.7;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        h2 {
+            color: var(--primary-red);
+            margin: 30px 0 15px 0;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .highlight {
+            background: var(--primary-red);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            background: rgba(239, 68, 68, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-red);
+            margin: 30px 0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">Back to Support</a>
+        
+        <h1>Privacy Policy</h1>
+        <p class="date">Effective Date: October 24, 2025</p>
+        
+        <h2>Overview</h2>
+        <p>At Pulse, we take your privacy seriously. This privacy policy explains how we handle your information when you use our heart rate monitoring application.</p>
+        
+        <h2>Data Collection</h2>
+        <p>We want to be completely transparent: <span class="highlight">Pulse collects ZERO personal data</span>. Our app operates entirely on your device and does not transmit any information to our servers or third parties.</p>
+        <ul>
+            <li>No personal information is collected</li>
+            <li>No heart rate data is stored externally</li>
+            <li>No usage analytics are tracked</li>
+            <li>No location data is accessed</li>
+            <li>No device information is transmitted</li>
+        </ul>
+        
+        <h2>Local Storage</h2>
+        <p>All heart rate measurements and app preferences are stored locally on your device only. This data never leaves your device and is not accessible to us or any third parties.</p>
+        
+        <h2>Permissions</h2>
+        <p>Pulse only requests the minimum permissions necessary to function:</p>
+        <ul>
+            <li><strong>Camera Access:</strong> Required to detect heart rate using your device's camera and flashlight</li>
+            <li><strong>Flashlight Access:</strong> Used in conjunction with the camera for heart rate detection</li>
+        </ul>
+        <p>These permissions are used solely for the app's core functionality and no data is stored or transmitted.</p>
+        
+        <h2>Third-Party Services</h2>
+        <p>Pulse does not integrate with any third-party analytics services, advertising networks, or data collection platforms. The app operates completely independently.</p>
+        
+        <h2>Children's Privacy</h2>
+        <p>Since we collect no personal information whatsoever, Pulse is safe for users of all ages. We do not knowingly collect personal information from children under 13 or any other age group.</p>
+        
+        <h2>Data Security</h2>
+        <p>Since no data is collected or transmitted, there are no external security risks. All your heart rate measurements remain private on your device.</p>
+        
+        <h2>Changes to This Policy</h2>
+        <p>If we ever change our data practices (which would require a significant app update), we will update this privacy policy and notify users through the app.</p>
+        
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p>If you have any questions about this privacy policy or Pulse app, please contact us:</p>
+            <p><strong>Email:</strong> support@pulse-app.com</p>
+            <p><strong>Developer:</strong> emersoneegs-web</p>
+        </div>
+    </div>
+</body>
+</html>
