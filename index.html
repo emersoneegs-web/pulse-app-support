@@ -5,222 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse - Support</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-        }
-        @media (prefers-color-scheme: dark) {
-            body {
-                background: #1a1a1a;
-                color: #e0e0e0;
-            }
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-            color: white;
-            border-radius: 16px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .logo {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #ef4444;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            font-size: 2em;
-            border-bottom: 3px solid #ef4444;
-            padding-bottom: 10px;
-        }
-        @media (prefers-color-scheme: dark) {
-            h2 {
-                color: #f87171;
-                border-color: #f87171;
-            }
-        }
-        .subtitle {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-        section {
-            background: white;
-            padding: 30px;
-            margin-bottom: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-        }
-        @media (prefers-color-scheme: dark) {
-            section {
-                background: #262626;
-            }
-        }
-        ul, ol {
-            margin-left: 30px;
-            margin-bottom: 20px;
-        }
-        li {
-            margin-bottom: 15px;
-        }
-        strong {
-            color: #dc2626;
-        }
-        @media (prefers-color-scheme: dark) {
-            strong {
-                color: #f87171;
-            }
-        }
-        a {
-            color: #dc2626;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        a:hover {
-            color: #ef4444;
-            text-decoration: underline;
-        }
-        @media (prefers-color-scheme: dark) {
-            a {
-                color: #f87171;
-            }
-            a:hover {
-                color: #fca5a5;
-            }
-        }
-        .faq-item {
-            margin-bottom: 25px;
-            padding: 20px;
-            background: #fef2f2;
-            border-radius: 8px;
-            border-left: 4px solid #ef4444;
-        }
-        @media (prefers-color-scheme: dark) {
-            .faq-item {
-                background: #1f1f1f;
-                border-left-color: #f87171;
-            }
-        }
-        .faq-question {
-            font-weight: bold;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-            color: #dc2626;
-        }
-        @media (prefers-color-scheme: dark) {
-            .faq-question {
-                color: #f87171;
-            }
-        }
-        p {
-            margin-bottom: 15px;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
+        @media (prefers-color-scheme: dark) { body { background: #1a1a1a; color: #e0e0e0; } }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white; border-radius: 16px; margin-bottom: 40px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .logo { font-size: 3em; margin-bottom: 10px; }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        h2 { color: #ef4444; margin-top: 40px; margin-bottom: 20px; font-size: 2em; border-bottom: 3px solid #ef4444; padding-bottom: 10px; }
+        @media (prefers-color-scheme: dark) { h2 { color: #f87171; border-color: #f87171; } }
+        .subtitle { font-size: 1.2em; opacity: 0.9; }
+        section { margin: 20px 0; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.08); }
+        @media (prefers-color-scheme: dark) { section { background: #262626; } }
+        ul { padding-left: 20px; }
+        a { color: #2563eb; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer { text-align: center; margin-top: 40px; color: #666; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">❤️‍🩹</div>
-            <h1>Pulse</h1>
-            <p class="subtitle">ACLS Training & Code Simulation Support</p>
+            <div class="logo">❤️</div>
+            <h1>Pulse Support</h1>
+            <p class="subtitle">Helpful links and resources for using Pulse</p>
         </header>
-        
+
         <section>
-            <h2>About Pulse</h2>
-            <p>Pulse is a training app designed to help healthcare professionals practice ACLS (Advanced Cardiac Life Support) scenarios. It provides timing tools, reference materials, and simulation aids for training purposes only.</p>
-            <p><strong>Important:</strong> This app is for educational training only. It is not intended for use in actual medical emergencies or patient care.</p>
-        </section>
-        
-        <section>
-            <h2>Features</h2>
+            <h2>Getting Help</h2>
+            <p>If you need assistance using the app or have found a bug, please open an issue on our GitHub repository.</p>
             <ul>
-                <li><strong>Code Timer:</strong> Track elapsed time during practice scenarios</li>
-                <li><strong>2-Minute CPR Cycles:</strong> Automatic alerts for compression/rhythm check intervals</li>
-                <li><strong>Drug Administration Buttons:</strong> Log common ACLS medications with timestamps</li>
-                <li><strong>Metronome:</strong> Adjustable from 80-140 BPM for compression rate guidance</li>
-                <li><strong>ACLS Algorithms:</strong> Quick reference guides for common scenarios</li>
-                <li><strong>Session History:</strong> Review past training sessions</li>
-                <li><strong>Offline Operation:</strong> Works without internet connection</li>
+                <li><a href="https://github.com/emersoneegs-web/pulse-app-support/issues">Open a support issue</a></li>
+                <li><a href="https://github.com/emersoneegs-web/pulse-app-support">View the project repository</a></li>
             </ul>
         </section>
-        
-        <section>
-            <h2>How to Use</h2>
-            <ol>
-                <li>Open the app and tap "Start Code" to begin a practice session</li>
-                <li>The timer will automatically count up from zero</li>
-                <li>Use the drug buttons to log medication administration during practice</li>
-                <li>The app will alert you every 2 minutes for rhythm checks</li>
-                <li>Enable the metronome if you want compression rate guidance</li>
-                <li>Tap "End Code" when finishing your training scenario</li>
-                <li>Review the session summary and export if needed</li>
-                <li>Access algorithm references from the menu for quick study</li>
-            </ol>
-        </section>
-        
-        <section>
-            <h2>FAQ</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">Q: Is this app medically certified?</div>
-                <div>A: No. This is an educational training tool only. It is not certified for use in actual medical emergencies.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Q: Does the app collect my data?</div>
-                <div>A: All session data is stored locally on your device. We do not collect or transmit personal information. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Q: Can I use this during a real emergency?</div>
-                <div>A: No. This app is designed for training only. In real emergencies, follow your institution's protocols and contact emergency services immediately.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Q: Are the algorithms current?</div>
-                <div>A: The algorithms are based on published ACLS guidelines. However, always verify with current official sources and your institution's protocols.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Q: Why do the timers sometimes drift?</div>
-                <div>A: Mobile devices may pause background processes. For best accuracy, keep the app in the foreground during training sessions.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Q: Can I export my training logs?</div>
-                <div>A: Yes. From the History screen, you can export session data as text or share it with your study group.</div>
-            </div>
-        </section>
-        
-        <section>
-            <h2>Support</h2>
-            <p>For questions, feedback, or technical issues, please contact us at:</p>
-            <p><a href="mailto:dremerson.dev@gmail.com">dremerson.dev@gmail.com</a></p>
-        </section>
-        
+
         <section>
             <h2>Legal</h2>
-            <p><a href="privacy-policy.html">Privacy Policy</a></p>
-            <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.7;">© 2024 Pulse Training App. For educational use only.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a><br/>
+                <a href="disclaimer.html">Disclaimer &amp; Terms of Use</a>
+            </p>
         </section>
+
+        <footer>
+            <p>&copy; 2025 Pulse. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
