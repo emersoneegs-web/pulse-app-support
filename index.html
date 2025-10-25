@@ -67,75 +67,92 @@
             padding: 30px;
             margin-bottom: 30px;
             border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
         }
         @media (prefers-color-scheme: dark) {
             section {
-                background: #2a2a2a;
-            }
-        }
-        .warning {
-            background: #fef3c7;
-            border-left: 4px solid #f59e0b;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-        @media (prefers-color-scheme: dark) {
-            .warning {
-                background: #422006;
-                border-color: #fbbf24;
+                background: #262626;
             }
         }
         ul, ol {
-            margin-left: 20px;
-            margin-top: 15px;
+            margin-left: 30px;
+            margin-bottom: 20px;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        strong {
+            color: #dc2626;
+        }
+        @media (prefers-color-scheme: dark) {
+            strong {
+                color: #f87171;
+            }
+        }
+        a {
+            color: #dc2626;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ef4444;
+            text-decoration: underline;
+        }
+        @media (prefers-color-scheme: dark) {
+            a {
+                color: #f87171;
+            }
+            a:hover {
+                color: #fca5a5;
+            }
         }
         .faq-item {
             margin-bottom: 25px;
+            padding: 20px;
+            background: #fef2f2;
+            border-radius: 8px;
+            border-left: 4px solid #ef4444;
+        }
+        @media (prefers-color-scheme: dark) {
+            .faq-item {
+                background: #1f1f1f;
+                border-left-color: #f87171;
+            }
         }
         .faq-question {
             font-weight: bold;
-            color: #ef4444;
             margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #dc2626;
         }
         @media (prefers-color-scheme: dark) {
             .faq-question {
                 color: #f87171;
             }
         }
-        a {
-            color: #ef4444;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        p {
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">❤️</div>
+            <div class="logo">❤️‍🩹</div>
             <h1>Pulse</h1>
-            <p class="subtitle">CPR Training Timer & Resuscitation Assistant</p>
+            <p class="subtitle">ACLS Training & Code Simulation Support</p>
         </header>
-
+        
         <section>
-            <h2>About</h2>
-            <p>Pulse is an educational simulation tool designed to help medical students and healthcare professionals practice CPR timing and resuscitation protocols in a training environment.</p>
-            <div class="warning">
-                <strong>⚠️ Important:</strong> This app is for training and educational purposes only. It is NOT intended for use in real medical emergencies. Always follow your institution's protocols and consult qualified medical professionals.
-            </div>
+            <h2>About Pulse</h2>
+            <p>Pulse is a training app designed to help healthcare professionals practice ACLS (Advanced Cardiac Life Support) scenarios. It provides timing tools, reference materials, and simulation aids for training purposes only.</p>
+            <p><strong>Important:</strong> This app is for educational training only. It is not intended for use in actual medical emergencies or patient care.</p>
         </section>
-
+        
         <section>
             <h2>Features</h2>
             <ul>
-                <li><strong>Code Timers:</strong> Track elapsed time during resuscitation practice scenarios</li>
+                <li><strong>Code Timer:</strong> Track elapsed time during practice scenarios</li>
                 <li><strong>2-Minute CPR Cycles:</strong> Automatic alerts for compression/rhythm check intervals</li>
                 <li><strong>Drug Administration Buttons:</strong> Log common ACLS medications with timestamps</li>
                 <li><strong>Metronome:</strong> Adjustable from 80-140 BPM for compression rate guidance</li>
@@ -144,7 +161,7 @@
                 <li><strong>Offline Operation:</strong> Works without internet connection</li>
             </ul>
         </section>
-
+        
         <section>
             <h2>How to Use</h2>
             <ol>
@@ -158,41 +175,47 @@
                 <li>Access algorithm references from the menu for quick study</li>
             </ol>
         </section>
-
+        
         <section>
             <h2>FAQ</h2>
+            
             <div class="faq-item">
                 <div class="faq-question">Q: Is this app medically certified?</div>
                 <div>A: No. This is an educational training tool only. It is not certified for use in actual medical emergencies.</div>
             </div>
+            
             <div class="faq-item">
                 <div class="faq-question">Q: Does the app collect my data?</div>
                 <div>A: All session data is stored locally on your device. We do not collect or transmit personal information. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</div>
             </div>
+            
             <div class="faq-item">
                 <div class="faq-question">Q: Can I use this during a real emergency?</div>
                 <div>A: No. This app is designed for training only. In real emergencies, follow your institution's protocols and contact emergency services immediately.</div>
             </div>
+            
             <div class="faq-item">
                 <div class="faq-question">Q: Are the algorithms current?</div>
                 <div>A: The algorithms are based on published ACLS guidelines. However, always verify with current official sources and your institution's protocols.</div>
             </div>
+            
             <div class="faq-item">
                 <div class="faq-question">Q: Why do the timers sometimes drift?</div>
                 <div>A: Mobile devices may pause background processes. For best accuracy, keep the app in the foreground during training sessions.</div>
             </div>
+            
             <div class="faq-item">
                 <div class="faq-question">Q: Can I export my training logs?</div>
                 <div>A: Yes. From the History screen, you can export session data as text or share it with your study group.</div>
             </div>
         </section>
-
+        
         <section>
             <h2>Support</h2>
             <p>For questions, feedback, or technical issues, please contact us at:</p>
-            <p><a href="mailto:support@pulseapp.example.com">support@pulseapp.example.com</a></p>
+            <p><a href="mailto:dremerson.dev@gmail.com">dremerson.dev@gmail.com</a></p>
         </section>
-
+        
         <section>
             <h2>Legal</h2>
             <p><a href="privacy-policy.html">Privacy Policy</a></p>
